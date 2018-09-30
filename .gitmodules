@@ -1,0 +1,3 @@
+[submodule "constraint_equations/symcymod"]
+	path = constraint_equations/symcymod
+	url = git@github.com:gsubramani/symcymod.git
