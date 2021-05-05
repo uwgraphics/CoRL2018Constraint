@@ -62,7 +62,7 @@ def robust_lsq_m_estimates(model_error_func, model_fit_func, X,
 
 ## test out robust fitting
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 
 def model(x,y,a,b,weights):
@@ -113,12 +113,12 @@ if __name__ == "__main__":
     outlier_y = y_measured[outlier_indices]
 
 
-    plt.plot(x_actual, y_actual, '.b')
-    plt.plot(x_measured, y_measured, '.g')
-    plt.plot(x_measured, x_measured * sol_lsq.x[0] + sol_lsq.x[1], 'r')
-    plt.plot(x_measured, x_measured * params[0] + params[1], '.k')
-    plt.plot(x_measured, x_measured * paramsMest[0] + paramsMest[1], '--k')
-    plt.plot(robust_fit_x, robust_fit_y, 'ok')
-    plt.plot(outlier_x, outlier_y, 'xk')
-    plt.show()
+    # plt.plot(x_actual, y_actual, '.b')
+    # plt.plot(x_measured, y_measured, '.g')
+    # plt.plot(x_measured, x_measured * sol_lsq.x[0] + sol_lsq.x[1], 'r')
+    # plt.plot(x_measured, x_measured * params[0] + params[1], '.k')
+    # plt.plot(x_measured, x_measured * paramsMest[0] + paramsMest[1], '--k')
+    # plt.plot(robust_fit_x, robust_fit_y, 'ok')
+    # plt.plot(outlier_x, outlier_y, 'xk')
+    # plt.show()
 
